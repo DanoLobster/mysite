@@ -1,0 +1,649 @@
+{% block content %}
+  <style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.login-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.login-rectangle26 {
+  top: 56px;
+  left: 1268px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.login-rectangle4 {
+  top: 56px;
+  left: 802px;
+  width: 411px;
+  height: 68px;
+  position: absolute;
+}
+.login-text {
+  top: 80px;
+  left: 1286px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-text02 {
+  top: 80px;
+  left: 923px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-text04 {
+  top: 80px;
+  left: 1020px;
+  color: rgba(0, 0, 0, 1);
+  width: 51px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-text06 {
+  top: 80px;
+  left: 1114px;
+  color: rgba(0, 0, 0, 1);
+  width: 76px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-text08 {
+  top: 80px;
+  left: 826px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-text10 {
+  top: 79px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-rectangle27 {
+  top: 125px;
+  left: 994px;
+  width: 51px;
+  height: 4px;
+  position: absolute;
+}
+.login-rectangle28 {
+  top: 206px;
+  left: 416px;
+  width: 608px;
+  height: 689px;
+  position: absolute;
+  border-radius: 40px;
+}
+.login-text12 {
+  top: 241px;
+  left: 653px;
+  color: rgba(0, 0, 0, 1);
+  width: 133px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-input-fields {
+  top: 491px;
+  left: 479px;
+  width: 473px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background-color: rgba(248, 176, 160, 1);
+}
+.login-text14 {
+  top: 23px;
+  color: rgba(230, 16, 16, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-box {
+  top: 0px;
+  left: 0px;
+  width: 473px;
+  height: 60px;
+  position: absolute;
+  border-color: rgba(212, 215, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.login-text16 {
+  top: 13px;
+  left: 16px;
+  color: rgba(50, 57, 64, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-value-main {
+  top: 26px;
+  left: 17px;
+  width: 79px;
+  height: 28px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.login-start-cursor {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.login-value-masked {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login-mask-layer {
+  width: 79px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.login-text18 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-mask-box {
+  top: 1px;
+  left: 0px;
+  width: 297px;
+  height: 19px;
+  position: absolute;
+}
+.login-end-cursor {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.login-input-fields1 {
+  top: 597px;
+  left: 479px;
+  width: 473px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.login-text20 {
+  top: 23px;
+  color: rgba(230, 16, 16, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-box1 {
+  top: 0px;
+  left: 0px;
+  width: 473px;
+  height: 60px;
+  position: absolute;
+  border-color: rgba(212, 215, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.login-text22 {
+  top: 13px;
+  left: 16px;
+  color: rgba(50, 57, 64, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-value-main1 {
+  top: 26px;
+  left: 17px;
+  width: 79px;
+  height: 28px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.login-start-cursor1 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.login-value-masked1 {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login-mask-layer1 {
+  width: 79px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.login-text24 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-mask-box1 {
+  top: 1px;
+  left: 0px;
+  width: 297px;
+  height: 19px;
+  position: absolute;
+}
+.login-end-cursor1 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.login-text26 {
+  top: 336px;
+  left: 526px;
+  color: rgba(0, 0, 0, 0.6399999856948853);
+  width: 388px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.login-rectangle29 {
+  top: 759px;
+  left: 597px;
+  width: 246px;
+  height: 49px;
+  position: absolute;
+  border-radius: 100px;
+}
+.login-text28 {
+  top: 773px;
+  left: 693px;
+  color: rgba(0, 0, 0, 1);
+  width: 54px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-rectangle26 {
+  top: 62px;
+  left: 1239px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.main-page-before-rectangle4 {
+  top: 62px;
+  left: 773px;
+  width: 411px;
+  height: 68px;
+  position: absolute;
+}
+.main-page-after-text22 {
+  top: 79px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+        .main-page-before-text10 {
+  top: 86px;
+  left: 1257px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text12 {
+  top: 86px;
+  left: 894px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text14 {
+  top: 86px;
+  left: 991px;
+  color: rgba(0, 0, 0, 1);
+  width: 51px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text16 {
+  top: 86px;
+  left: 1085px;
+  color: rgba(0, 0, 0, 1);
+  width: 76px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text18 {
+  top: 86px;
+  left: 797px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+</style>
+<div>
+  <link href="./login.css" rel="stylesheet" />
+  <div class="login-container">
+    <div class="login-login">
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d9b7bc52-5667-4dae-8c5b-1730d47a2838?org_if_sml=1251"
+        alt="Rectangle265591"
+        class="main-page-before-rectangle26"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/288026cc-11de-4701-bea9-adf229bc8f13?org_if_sml=1346"
+        alt="Rectangle45592"
+        class="main-page-before-rectangle4"
+      />
+      <span class="main-page-before-text18"><a href="/"><span>Home</span></a></span>
+      <span class="main-page-before-text16"><a href="{% url 'register' %}"><span>Register</span></a></span>
+      <span class="main-page-before-text12"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="main-page-before-text14"><a href="{% url 'login' %}"><span>Login</span></a></span>
+      <span class="main-page-before-text10"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+      <span class="main-page-after-text22"><a href="/"><span>Placard De Porche</span></a></span>
+      <img
+        src="/rectangle275021-x8tm.svg"
+        alt="Rectangle275021"
+        class="login-rectangle27"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/b3420aad-0ed0-441e-80a7-43b7159ed718?org_if_sml=14565"
+        alt="Rectangle285237"
+        class="login-rectangle28"
+      />
+<div class="login-input-fields">
+  <span class="login-text14"><span>Name</span></span>
+  <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/9ec77d56-a234-4d47-8d24-055621501e49?org_if_sml=1450" alt="BoxI521" class="login-box" />
+  <span class="login-text16"><span>Username</span></span>
+  <div class="login-value-main">
+    <img src alt="StartCursorI521" class="login-start-cursor" />
+    <div class="login-value-masked">
+      <div class="login-mask-layer">
+        <span class="login-text18"><span>The Value</span></span>
+        <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/43d5a03f-237a-4570-acc2-580c753ff0a4?org_if_sml=1131" alt="MaskBoxI521" class="login-mask-box" />
+      </div>
+    </div>
+    <input type="text" class="login-input" placeholder="Enter your username" name="username" id="usernameInput">
+    <img src alt="EndCursorI521" class="login-end-cursor" />
+  </div>
+</div>
+<div class="login-input-fields1">
+  <span class="login-text20"><span>Name</span></span>
+  <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/b96663db-00f9-4ffe-b9b9-7e46a091b503?org_if_sml=1450" alt="BoxI521" class="login-box1" />
+  <span class="login-text22"><span>Password</span></span>
+  <div class="login-value-main1">
+    <img src alt="StartCursorI521" class="login-start-cursor1" />
+    <div class="login-value-masked1">
+      <div class="login-mask-layer1">
+        <span class="login-text24"><span>The Value</span></span>
+        <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/cb869320-b0ae-46ce-9b43-25e2754a050f?org_if_sml=1131" alt="MaskBoxI521" class="login-mask-box1" />
+      </div>
+    </div>
+    <input type="password" class="login-input" placeholder="Enter your password" name="password" id="passwordInput">
+    <img src alt="EndCursorI521" class="login-end-cursor1" />
+  </div>
+</div>
+<span class="login-text26">
+  <span>Have a registered account? Login here to get started.</span>
+</span>
+<img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/9e0165e4-6ef1-41d1-8a7d-2773501b6d09?org_if_sml=1967" alt="Rectangle295522" class="login-rectangle29" />
+
+<button type="submit" class="login-button" onclick="fillForm()">
+<span class="login-text28"><span>Login</span></span>
+<span class="login-text12"><span>Login</span></span>
+<style>
+  #loginForm {
+    display: none;
+  }
+</style>
+<form method="post" id="loginForm">
+  {% csrf_token %}
+  {{ form.as_p }}
+</form>
+<script>
+  function fillForm() {
+    const usernameInput = document.getElementById('usernameInput');
+    const passwordInput = document.getElementById('passwordInput');
+
+    const formUsernameInput = document.getElementById('id_username');
+    const formPasswordInput = document.getElementById('id_password');
+
+    formUsernameInput.value = usernameInput.value;
+    formPasswordInput.value = passwordInput.value;
+    document.getElementById('loginForm').submit();
+  }
+</script>
+
+{% endblock %}
+
+<!--   <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <input type="text" id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}" class="form-control" style="width: 300px;">
+    </div>
+    <div class="form-group">
+      <input type="password" id="{{ form.password.id_for_label }}" name="{{ form.password.html_name }}" class="form-control" style="width: 300px;">
+    </div>
+    <button type="submit">Login</button>
+  </form> -->

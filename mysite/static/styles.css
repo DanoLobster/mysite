@@ -1,0 +1,204 @@
+/* CSS for clothing grid layout */
+.clothing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+.clothing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clothing-item img {
+  width: 150px; /* Adjust the image size as needed */
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px; /* Adjust the spacing between the image and label as needed */
+}
+
+.root {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  align-items: flex-start;
+  background-color: #f680dd;
+  overflow: hidden;
+}
+.uploadYourClothesAccessoriesHe {
+  color: #000;
+  font-size: 40px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 97px;
+  width: 770px;
+  height: 50px;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
+.icons8UploadPicture1001 {
+  position: absolute;
+  left: 515px;
+  top: 361px;
+  width: 410px;
+  height: 303px;
+  background-image:/* webpackIgnore: true */ url('/assets/icons8UploadPicture1001.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.frame1 {
+  position: absolute;
+  left: 204px;
+  top: 720px;
+  width: 440px;
+  height: 99px;
+  align-items: flex-start;
+  padding: 20px 60px 22px 34px;
+  border-radius: 40px;
+  background-color: #ffffff70;
+}
+.selectImage {
+  color: #000;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: Arial, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.2em;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.frame2 {
+  position: absolute;
+  left: 835px;
+  top: 720px;
+  width: 440px;
+  height: 99px;
+  align-items: flex-start;
+  padding: 20px 60px 22px 34px;
+  border-radius: 40px;
+  background-color: #ffffff70;
+}
+.useWebcam {
+  color: #000;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: Arial, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.2em;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', serif;
+}
+.hero{
+    width: 89%;
+    margin: auto;
+    
+}
+.navbar{
+    margin: 2px auto;
+    display: flex;
+    align-items: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px; 
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+.banner{
+    display: flex;
+    margin-top: 15px;
+}
+.left-column,.right-column{
+    flex-basis: 50%;
+}
+.right-column img{
+    width: 93%;
+}
+
+.left-column h1{
+    font-size: 75px;
+}
+.left-column h3{
+    font-size: 35px;
+}
+span{
+    color: #f14a60;
+}
+.left-column p{
+    font-size: 14px;
+    color: #999;
+    margin: 50px 0;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+}
+.btn .primary-btn{
+    background: linear-gradient(#fb7381, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: #fff;
+}
+
+#container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #ccc;
+}
+
+.clothing-item {
+  position: absolute;
+  cursor: move;
+}

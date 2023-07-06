@@ -1,0 +1,658 @@
+{% if user.is_authenticated %}
+<style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-page-after-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.main-page-after-main-page-after {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.main-page-after-rectangle26 {
+  top: 56px;
+  left: 1435px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.main-page-after-rectangle4 {
+  top: 55px;
+  left: 415px;
+  width: 950px;
+  height: 68px;
+  position: absolute;
+}
+.main-page-after-text {
+  top: 81px;
+  left: 1103px;
+  color: rgba(0, 0, 0, 1);
+  width: 116px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text02 {
+  top: 80px;
+  left: 1450px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text04 {
+  top: 79px;
+  left: 1000px;
+  color: rgba(0, 0, 0, 1);
+  width: 64px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text06 {
+  top: 79px;
+  left: 809px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text08 {
+  top: 79px;
+  left: 647px;
+  color: rgba(0, 0, 0, 1);
+  width: 132px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text10 {
+  top: 79px;
+  left: 529px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text12 {
+  top: 79px;
+  left: 432px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text14 {
+  top: 307px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 775px;
+  height: auto;
+  position: absolute;
+  font-size: 100px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text15 {
+  color: rgba(0, 0, 0, 1);
+}
+.main-page-after-text17 {
+  top: 559px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 556px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text18 {
+  color: rgba(0, 0, 0, 1);
+}
+.main-page-after-text20 {
+  top: 635px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 651px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-text22 {
+  top: 79px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-after-rectangle2 {
+  top: 401px;
+  left: 999px;
+  width: 447px;
+  height: 234px;
+  position: absolute;
+}
+.main-page-after-rectangle1 {
+  top: 236px;
+  left: 849px;
+  width: 463px;
+  height: 253px;
+  position: absolute;
+}
+.main-page-after-rectangle3 {
+  top: 403px;
+  left: 914px;
+  width: 257px;
+  height: 416px;
+  position: absolute;
+}
+.main-page-after-rectangle11 {
+  top: 321px;
+  left: 1006px;
+  width: 343px;
+  height: 354px;
+  position: absolute;
+}
+.main-page-after-rectangle27 {
+  top: 119px;
+  left: 432px;
+  width: 53px;
+  height: 4px;
+  position: absolute;
+}
+.add-outfits{
+  top:81px;
+  left: 1253px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+
+</style>
+
+<div>
+  <link href="./main-page-after.css" rel="stylesheet" />
+  <div class="main-page-after-container">
+    <div class="main-page-after-main-page-after">
+      <img
+        alt="Rectangle264642"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/890df84a-e3d7-4338-817a-6c71016818bf?org_if_sml=1251"
+        class="main-page-after-rectangle26"
+      />
+      <img
+        alt="Rectangle42114"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d0806ae2-f5eb-4c3e-8bfe-53eda3329cb0?org_if_sml=1465"
+        class="main-page-after-rectangle4"
+      />
+      <span class="main-page-after-text"><a href="{% url 'view_outfit' %}">View Outfits</span></a></span>
+      <span class="main-page-after-text02"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+      <span class="main-page-after-text04"><a href="{% url 'test' %}">Merge</span></a></span>
+      <span class="main-page-after-text06"><a href="{% url 'view_clothing' %}?next=/"><span>View Clothings</span></a></span>
+      <span class="main-page-after-text08"><a href="{% url 'add_clothing' %}?next=/"><span>Add Clothing</span></a></span>
+      <span class="main-page-after-text10"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="main-page-after-text12"><a href="/"><span>Home</span></a></span>
+      <span class="add-outfits"><a href="{% url 'add_outfit' %}?next=/"><span>Add Outfit</span></a></span>
+      <span class="main-page-after-text14">
+        <span class="main-page-after-text15">Fashion</span>
+        <span>Classification</span>
+      </span>
+      <span class="main-page-after-text17">
+        <span class="main-page-after-text18">Your Online</span>
+        <span>Closet</span>
+      </span>
+      <span class="main-page-after-text20">
+        <span>
+          You can upload your fashion items and make this website your personal
+          online closet
+        </span>
+      </span>
+      <span class="main-page-after-text22"><a href="/"><span>Placard De Porche</span></a></span>
+       <!--       <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}?next=/">Logout</a></li>
+            <li><a href="{% url 'add_clothing' %}">Add Clothing</a></li>
+            <li><a href="{% url 'view_clothing' %}">View Clothings</a></li>
+            <li><a href="{% url 'test' %}">Merge</a></li>
+            <li><a href="{% url 'add_outfit' %}">Add Outfit</a></li>
+            <li><a href="{% url 'view_outfit' %}">View Outfits</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+            {% endif %}
+        </ul>-->
+      <img
+        alt="Rectangle21949"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/581a2e0f-2675-422b-bd76-90a2bd9427ce?org_if_sml=1955"
+        class="main-page-after-rectangle2"
+      />
+      <img
+        alt="Rectangle11836"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d8c93782-99e9-479b-b317-d73435cd9bdb?org_if_sml=11026"
+        class="main-page-after-rectangle1"
+      />
+      <img
+        alt="Rectangle31950"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/3b49acc2-484e-4e3c-85bb-47a474b89856?org_if_sml=11303"
+        class="main-page-after-rectangle3"
+      />
+      <img
+        alt="Rectangle114644"
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/b1fba728-1ed7-412e-a935-637b4bef0335?org_if_sml=138029"
+        class="main-page-after-rectangle11"
+      />
+      <img
+        alt="Rectangle274610"
+        src="/rectangle274610-dn3.svg"
+        class="main-page-after-rectangle27"
+      />
+    </div>
+  </div>
+</div>
+{% else %}
+<style>
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+	.main-page-before-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
+}
+.main-page-before-main-page-before {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.main-page-before-text {
+  top: 307px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 775px;
+  height: auto;
+  position: absolute;
+  font-size: 100px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text01 {
+  color: rgba(0, 0, 0, 1);
+}
+.main-page-before-text03 {
+  top: 559px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 556px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text04 {
+  color: rgba(0, 0, 0, 1);
+}
+.main-page-before-text06 {
+  top: 635px;
+  left: 83px;
+  color: rgba(0, 0, 0, 1);
+  width: 651px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text08 {
+  top: 79px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-rectangle2 {
+  top: 401px;
+  left: 999px;
+  width: 447px;
+  height: 234px;
+  position: absolute;
+}
+.main-page-before-rectangle1 {
+  top: 236px;
+  left: 849px;
+  width: 463px;
+  height: 253px;
+  position: absolute;
+}
+.main-page-before-rectangle3 {
+  top: 403px;
+  left: 914px;
+  width: 257px;
+  height: 416px;
+  position: absolute;
+}
+.main-page-before-rectangle11 {
+  top: 321px;
+  left: 1006px;
+  width: 343px;
+  height: 354px;
+  position: absolute;
+}
+.main-page-before-rectangle26 {
+  top: 62px;
+  left: 1239px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.main-page-before-rectangle4 {
+  top: 62px;
+  left: 773px;
+  width: 411px;
+  height: 68px;
+  position: absolute;
+}
+.main-page-before-text10 {
+  top: 86px;
+  left: 1257px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text12 {
+  top: 86px;
+  left: 894px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text14 {
+  top: 86px;
+  left: 991px;
+  color: rgba(0, 0, 0, 1);
+  width: 51px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text16 {
+  top: 86px;
+  left: 1085px;
+  color: rgba(0, 0, 0, 1);
+  width: 76px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text18 {
+  top: 86px;
+  left: 797px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+</style>
+<div>
+  <link href="./main-page-before.css" rel="stylesheet" />
+  <div class="main-page-before-container">
+    <div class="main-page-before-main-page-before">
+      <span class="main-page-before-text">
+        <span class="main-page-before-text01">Fashion</span>
+        <span>Classification</span>
+      </span>
+      <span class="main-page-before-text03">
+        <span class="main-page-before-text04">Your Online</span>
+        <span>Closet</span>
+      </span>
+      <span class="main-page-before-text06">
+        <span>
+          You can upload your fashion items and make this website your personal
+          online closet
+        </span>
+      </span>
+      <span class="main-page-before-text08">
+        <span class="main-page-after-text22"><a href="/"><span>Placard De Porche</span></a></span>
+      </span>
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/7a45d114-0500-4232-872a-3669515938f8?org_if_sml=1955"
+        alt="Rectangle25586"
+        class="main-page-before-rectangle2"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/535071b9-4496-4a06-b8d9-a8f4c497d74d?org_if_sml=11026"
+        alt="Rectangle15587"
+        class="main-page-before-rectangle1"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/30ca511b-ace8-49b9-a0a9-3b0ec6e823f1?org_if_sml=11303"
+        alt="Rectangle35588"
+        class="main-page-before-rectangle3"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/acdc23f7-0945-42d1-93b4-ba9fdf28fec4?org_if_sml=138029"
+        alt="Rectangle115589"
+        class="main-page-before-rectangle11"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d9b7bc52-5667-4dae-8c5b-1730d47a2838?org_if_sml=1251"
+        alt="Rectangle265591"
+        class="main-page-before-rectangle26"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/288026cc-11de-4701-bea9-adf229bc8f13?org_if_sml=1346"
+        alt="Rectangle45592"
+        class="main-page-before-rectangle4"
+      />
+      <span class="main-page-before-text18"><a href="/"><span>Home</span></a></span>
+      <span class="main-page-before-text16"><a href="{% url 'register' %}"><span>Register</span></a></span>
+      <span class="main-page-before-text12"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="main-page-before-text14"><a href="{% url 'login' %}"><span>Login</span></a></span>
+      <span class="main-page-before-text10"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+    </div>
+  </div>
+</div>
+{% endif %}

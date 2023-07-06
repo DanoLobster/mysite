@@ -1,0 +1,549 @@
+<style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+  .view-clothings-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.view-clothings-view-clothings {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.view-clothings-rectangle10 {
+  top: 198px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.view-clothings-rectangle2 {
+  top: 400px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.70;
+  position: absolute;
+}
+.view-clothings-text {
+  top: 216px;
+  left: 88px;
+  color: rgba(0, 0, 0, 1);
+  width: 685px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-rectangle6 {
+  top: 363px;
+  left: 83px;
+  width: 338px;
+  height: 30px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.view-clothings-text02 {
+  top: 369px;
+  left: 85px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text02 input {
+  width: 335px;
+}
+
+.view-clothings-rectangle7 {
+  top: 365px;
+  left: 438px;
+  width: 118px;
+  height: 25px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.view-clothings-rectangle9 {
+  top: 365px;
+  left:705px;
+  width: 163px;
+  height: 25px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.view-clothings-rectangle8 {
+  top: 365px;
+  left: 615px;
+  width: 76px;
+  height: 25px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.view-clothings-text04 {
+  top: 368px;
+  left: 599px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text06 {
+  top: 366px;
+  left: 442px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.view-clothings-text06 input {
+  width: 325px;
+}
+
+.sortby {
+  top: 366px;
+  left: 694px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.view-clothings-text08 {
+  top: 367px;
+  left: 707px;
+  color: rgba(0, 0, 0, 1);
+  width: 190px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.view-clothings-text10 {
+  top: 373px;
+  left: 552.0817260742188px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Light;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-rectangle26 {
+  top: 58px;
+  left: 1435px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.view-clothings-rectangle4 {
+  top: 57px;
+  left: 415px;
+  width: 950px;
+  height: 68px;
+  position: absolute;
+}
+.view-clothings-text11 {
+  top: 81px;
+  left: 1103px;
+  color: rgba(0, 0, 0, 1);
+  width: 116px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text13 {
+  top: 82px;
+  left: 1450px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text15 {
+  top: 81px;
+  left: 1000px;
+  color: rgba(0, 0, 0, 1);
+  width: 64px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text17 {
+  top: 81px;
+  left: 809px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text19 {
+  top: 81px;
+  left: 647px;
+  color: rgba(0, 0, 0, 1);
+  width: 132px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text21 {
+  top: 81px;
+  left: 529px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text23 {
+  top: 81px;
+  left: 432px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-text25 {
+  top: 81px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.view-clothings-rectangle27 {
+  top: 121px;
+  left: 809px;
+  width: 140px;
+  height: 4px;
+  position: absolute;
+}
+
+    .img-clothing {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      border: 1px solid black; /* Add border */
+      background-color: #f1f1f1; /* Add background color */
+    }
+
+    .clothing-container {
+      position: absolute;
+      top: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .clothing-item {
+      margin: 10px;
+      width: 200px;
+      position: relative;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #30D5C8;
+      color: #000;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px; /* Adjust the value to move the button down */
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Increase the size of the checkbox */
+    input[type="checkbox"] {
+      width: 200px;
+      height: 20px;
+    }
+.add-outfits{
+  top:81px;
+  left: 1253px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+</style>
+<div>
+  <link href="./view-clothings.css" rel="stylesheet" />
+  <div class="view-clothings-container">
+    <div class="view-clothings-view-clothings">
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/9cb507f2-9f3b-40a9-829c-c4122cfe1daa?org_if_sml=16511"
+        alt="Rectangle102826"
+        class="view-clothings-rectangle10"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/c04455a0-5fd2-4d96-aca5-d908ff6226c6?org_if_sml=12489"
+        alt="Rectangle22812"
+        class="view-clothings-rectangle2"
+      />
+      <span class="view-clothings-text"><span>My Clothing</span></span>
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/b0df0c58-eabb-4380-a6ca-3161b903fd38?org_if_sml=1376"
+        alt="Rectangle62817"
+        class="view-clothings-rectangle6"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/530eb1c1-fd5c-4bb5-8b04-3da718eb7fd2?org_if_sml=1330"
+        alt="Rectangle72819"
+        class="view-clothings-rectangle7"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/6fc99ea0-c422-488e-911a-2fa696b7e9cc?org_if_sml=1340"
+        alt="Rectangle92820"
+        class="view-clothings-rectangle9"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/4b515121-03f6-4246-af92-9468895c79d4?org_if_sml=1313"
+        alt="Rectangle82821"
+        class="view-clothings-rectangle8"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/ca281e67-e7f2-4b0b-b4d7-f0d66a52bc48?org_if_sml=1251"
+        alt="Rectangle264662"
+        class="view-clothings-rectangle26"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/c524bf33-5393-4f66-9444-e255794246da?org_if_sml=1465"
+        alt="Rectangle44663"
+        class="view-clothings-rectangle4"
+      />
+      <span class="view-clothings-text11"><a href="{% url 'view_outfit' %}">View Outfits</span></a></span>
+      <span class="view-clothings-text13"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+      <span class="view-clothings-text15"><a href="{% url 'test' %}">Merge</span></a></span>
+      <span class="view-clothings-text17"><a href="{% url 'view_clothing' %}?next=/"><span>View Clothings</span></a></span>
+      <span class="view-clothings-text19"><a href="{% url 'add_clothing' %}?next=/"><span>Add Clothing</span></a></span>
+      <span class="view-clothings-text21"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="view-clothings-text23"><a href="/"><span>Home</span></a></span>
+      <span class="view-clothings-text25"><a href="/"><span>Placard De Porche</span></a></span>
+      <span class="add-outfits"><a href="{% url 'add_outfit' %}?next=/"><span>Add Outfit</span></a></span>
+      <img
+        src="/rectangle274610-16zp.svg"
+        alt="Rectangle274610"
+        class="view-clothings-rectangle27"
+      />
+      {% block content %}
+  <div class="search-form">
+    <form method="GET" action="{% url 'view_clothing' %}">
+      <span class="view-clothings-text02">
+      <input type="text" name="q" placeholder="Search clothing" value="{{ request.GET.q }}">
+    </span>
+      <span class="view-clothings-text06">
+      <select name="category">
+    </span>
+        <option value="">All Categories</option>
+        <option value="headwear">Headwear</option>
+        <option value="neckwear">Neckwear</option>
+        <option value="tops">Tops</option>
+        <option value="bottoms">Bottoms</option>
+        <option value="legwear">Legwear</option>
+        <option value="feetwear">Feetwear</option>
+        <option value="underwear">Underwear</option>
+        <option value="accessories">Accessories</option>
+      </select>
+      <button type="submit">Search</button>
+    <select name="sort">
+      <option value="">Default</option>
+      <option value="oldest" {% if request.GET.sort == 'oldest' %}selected{% endif %}>Oldest</option>
+      <option value="newest" {% if request.GET.sort == 'newest' %}selected{% endif %}>Newest</option>
+    </select>
+    </form>
+  </div>
+  <form method="POST" action="{% url 'delete_clothing' %}">
+    {% csrf_token %}
+    <div class="clothing-container">
+      {% for item in clothing %}
+        <div class="clothing-item">
+          <label>
+            <input type="checkbox" name="clothing" value="{{ item.id }}">
+            <div class="clothing-details">
+              <h3>{{ item.name }}</h3>
+              <p>Category: {{ item.category }}</p>
+            </div>
+            <div class="clothing-image">
+              {% if item.image %}
+                <img src="{{ item.image.url }}" alt="{{ item.name }}" class="img-clothing">
+                <a href="{{ item.image.url }}" download class="download-button">Download</a>
+              {% else %}
+                <p>No image available</p>
+              {% endif %}
+            </div>
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+    <span class="view-clothings-text08">
+    <button type="submit">Delete Selected Clothing</button>
+  </span>
+  </form>
+{% endblock %}
+    </div>
+  </div>
+</div>
+
+

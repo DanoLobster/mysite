@@ -1,0 +1,451 @@
+<!--
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+  </form>
+-->
+<style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.add-clothing1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.add-clothing1-add-clothing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.add-clothing1-rectangle10 {
+  top: 198px;
+  left: 0px;
+  width: 100%;
+  height: 826px;
+  position: absolute;
+}
+.add-clothing1-text {
+  top: 365px;
+  left: 500px;
+  color: rgba(0, 0, 0, 1);
+  width: 103px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.format {
+  top: 368px;
+  left: 685px;
+  color: rgba(0, 0, 0, 1);
+  width: 200px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Light;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  transform: skew(-14deg);
+}
+
+.add-clothing1-rectangle33 {
+  top: 476px;
+  left: 175px;
+  width: 109px;
+  height: 36px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.add-clothing1-rectangle26 {
+  top: 63px;
+  left: 1435px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.add-clothing1-rectangle4 {
+  top: 62px;
+  left: 415px;
+  width: 950px;
+  height: 68px;
+  position: absolute;
+}
+.add-clothing1-text02 {
+  top: 86px;
+  left: 1103px;
+  color: rgba(0, 0, 0, 1);
+  width: 116px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text04 {
+  top: 86px;
+  left: 1450px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text06 {
+  top: 86px;
+  left: 1000px;
+  color: rgba(0, 0, 0, 1);
+  width: 64px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text08 {
+  top: 86px;
+  left: 809px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text10 {
+  top: 86px;
+  left: 647px;
+  color: rgba(0, 0, 0, 1);
+  width: 132px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text12 {
+  top: 86px;
+  left: 529px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text14 {
+  top: 86px;
+  left: 432px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text16 {
+  top: 86px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-rectangle27 {
+  top: 126px;
+  left: 1240px;
+  width: 121px;
+  height: 4px;
+  position: absolute;
+}
+.add-clothing1-text18 {
+  top: 216px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 612px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Frank Ruhl Libre;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text20 {
+  top: 365px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 103px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Light;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-text22 {
+  top: 480px;
+  left: 182px;
+  color: rgba(0, 0, 0, 1);
+  width: 89px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 200;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-rectangle34 {
+  top: 529px;
+  left: 72px;
+  width: 109px;
+  height: 36px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+.add-clothing1-text24 {
+  top: 537px;
+  left: 107px;
+  color: rgba(0, 0, 0, 1);
+  width: 89px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Light;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-rectangle31 {
+  top: 371px;
+  left: 175px;
+  width: 347px;
+  height: 36px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.add-clothing1-text26 {
+  top: 365px;
+  left: 282px;
+  color: rgba(0, 0, 0, 1);
+  width: 141px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Light;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.add-clothing1-rectangle32 {
+  top: 417px;
+  left: 213px;
+  width: 347px;
+  height: 36px;
+  opacity: 0.20;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+}
+.add-outfits{
+  top:86px;
+  left: 1253px;
+  color: rgba(0, 0, 0, 1);
+  width: 152px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.redbackground {
+  top: 400px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+</style>
+<div>
+  <link href="./add-clothing1.css" rel="stylesheet" />
+  <div class="add-clothing1-container">
+    <div class="add-clothing1-add-clothing">
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/bc652709-0a32-426e-b559-fc06c4c24193?org_if_sml=13007"
+        alt="Rectangle19365"
+        class="redbackground"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/cb8afd62-fd02-4240-8130-88cf880c3511?org_if_sml=16511"
+        alt="Rectangle102416"
+        class="add-clothing1-rectangle10"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/0e28e6f0-a4cf-4c78-8e0e-1c6f57674639?org_if_sml=1251"
+        alt="Rectangle264652"
+        class="add-clothing1-rectangle26"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/4e10265b-6d0a-4076-986b-ed5a62bcb5ae?org_if_sml=1465"
+        alt="Rectangle44653"
+        class="add-clothing1-rectangle4"
+      />
+      <span class="add-clothing1-text02"><a href="{% url 'view_outfit' %}">View Outfits</span></a></span>
+      <span class="add-clothing1-text04"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+      <span class="add-clothing1-text06"><a href="{% url 'test' %}">Merge</span></a></span>
+      <span class="add-clothing1-text08"><a href="{% url 'view_clothing' %}?next=/"><span>View Clothings</span></a></span>
+      <span class="add-clothing1-text10"><a href="{% url 'add_clothing' %}?next=/"><span>Add Clothing</span></a></span>
+      <span class="add-clothing1-text12"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="add-clothing1-text14"><a href="/"><span>Home</span></a></span>
+      <span class="add-clothing1-text16"><a href="/"><span>Placard De Porche</span></a></span>
+      <span class="add-outfits"><a href="{% url 'add_outfit' %}?next=/"><span>Add Outfit</span></a></span>
+      <img
+        src="/rectangle274610-8zo.svg"
+        alt="Rectangle274610"
+        class="add-clothing1-rectangle27"
+      />
+<form method="post" enctype="multipart/form-data" id="OutfitForm">
+    {% csrf_token %}
+    <span class="add-clothing1-text18"><span>Add Outfit</span></span>
+    <span class="add-clothing1-text20">
+      <input type="text" class="name-input" placeholder="Enter a name" name="name" id="nameInput">
+    </span>
+    <span class="add-clothing1-text">
+      <input type="file" name="image" id="imageInput">
+    </span>
+    <span class="format">Only use PNG and JPEG.</span>
+    <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/20d486df-c840-414d-8539-05f3780dbade?org_if_sml=1346" alt="Rectangle349362" class="add-clothing1-rectangle34">
+    <button type="submit" class="login-button">
+      <span class="add-clothing1-text24"><span>Add</span></span>
+    </button>
+    <span class="add-clothing1-text26">
+      <input type="text" class="name-input" placeholder="Enter a category" name="category" id="categoryInput">
+    </span>
+  </form>
+
+
+<!--{% block content %}
+  <h1>Add Outfit</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+  </form>
+{% endblock %} -->

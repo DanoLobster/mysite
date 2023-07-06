@@ -1,0 +1,699 @@
+<style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+  .register-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.register-register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(248, 176, 160, 0.800000011920929);
+}
+.register-rectangle27 {
+  top: 126px;
+  left: 1090px;
+  width: 73px;
+  height: 4px;
+  position: absolute;
+}
+.register-rectangle28 {
+  top: 206px;
+  left: 416px;
+  width: 608px;
+  height: 689px;
+  position: absolute;
+  border-radius: 40px;
+}
+.register-input-fields {
+  top: 613px;
+  left: 479px;
+  width: 473px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.register-text12 {
+  top: 23px;
+  color: rgba(230, 16, 16, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-box {
+  top: 0px;
+  left: 0px;
+  width: 473px;
+  height: 60px;
+  position: absolute;
+  border-color: rgba(212, 215, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.register-text14 {
+  top: 13px;
+  left: 16px;
+  color: rgba(50, 57, 64, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-value-main {
+  top: 26px;
+  left: 17px;
+  width: 79px;
+  height: 28px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.register-start-cursor {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-value-masked {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+.register-mask-layer {
+  width: 79px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.register-text16 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-mask-box {
+  top: 1px;
+  left: 0px;
+  width: 297px;
+  height: 19px;
+  position: absolute;
+}
+.register-end-cursor {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-text18 {
+  top: 239px;
+  left: 625px;
+  color: rgba(0, 0, 0, 1);
+  width: 190px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-input-fields1 {
+  top: 435px;
+  left: 479px;
+  width: 473px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background-color: rgba(248, 176, 160, 1);
+}
+.register-text20 {
+  top: 23px;
+  color: rgba(230, 16, 16, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-box1 {
+  top: 0px;
+  left: 0px;
+  width: 473px;
+  height: 60px;
+  position: absolute;
+  border-color: rgba(212, 215, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.register-text22 {
+  top: 13px;
+  left: 16px;
+  color: rgba(50, 57, 64, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-value-main1 {
+  top: 26px;
+  left: 17px;
+  width: 79px;
+  height: 28px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.register-start-cursor1 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-value-masked1 {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+.register-mask-layer1 {
+  width: 79px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.register-text24 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-mask-box1 {
+  top: 1px;
+  left: 0px;
+  width: 297px;
+  height: 19px;
+  position: absolute;
+}
+.register-end-cursor1 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-input-fields2 {
+  top: 521px;
+  left: 479px;
+  width: 473px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.register-text26 {
+  top: 23px;
+  color: rgba(230, 16, 16, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-box2 {
+  top: 0px;
+  left: 0px;
+  width: 473px;
+  height: 60px;
+  position: absolute;
+  border-color: rgba(212, 215, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.register-text28 {
+  top: 13px;
+  left: 16px;
+  color: rgba(50, 57, 64, 1);
+  height: auto;
+  opacity: 0.80;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-value-main2 {
+  top: 26px;
+  left: 17px;
+  width: 79px;
+  height: 28px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+}
+.register-start-cursor2 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-value-masked2 {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
+.register-mask-layer2 {
+  width: 79px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.register-text30 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-mask-box2 {
+  top: 1px;
+  left: 0px;
+  width: 297px;
+  height: 19px;
+  position: absolute;
+}
+.register-end-cursor2 {
+  width: 0px;
+  height: 18px;
+  opacity: 0.00;
+}
+.register-text32 {
+  top: 336px;
+  left: 526px;
+  color: rgba(0, 0, 0, 0.6399999856948853);
+  width: 397px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-rectangle29 {
+  top: 759px;
+  left: 597px;
+  width: 246px;
+  height: 49px;
+  position: absolute;
+  border-radius: 100px;
+}
+.register-text34 {
+  top: 773px;
+  left: 680px;
+  color: rgba(0, 0, 0, 1);
+  width: 80px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-rectangle26 {
+  top: 62px;
+  left: 1239px;
+  width: 107px;
+  height: 67px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.main-page-before-rectangle4 {
+  top: 62px;
+  left: 773px;
+  width: 411px;
+  height: 68px;
+  position: absolute;
+}
+.main-page-after-text22 {
+  top: 79px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraBold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+        .main-page-before-text10 {
+  top: 86px;
+  left: 1257px;
+  color: rgba(0, 0, 0, 1);
+  width: 75px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text12 {
+  top: 86px;
+  left: 894px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text14 {
+  top: 86px;
+  left: 991px;
+  color: rgba(0, 0, 0, 1);
+  width: 51px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text16 {
+  top: 86px;
+  left: 1085px;
+  color: rgba(0, 0, 0, 1);
+  width: 76px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.main-page-before-text18 {
+  top: 86px;
+  left: 797px;
+  color: rgba(0, 0, 0, 1);
+  width: 57px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+</style>
+<div>
+  <link href="./register.css" rel="stylesheet" />
+  <div class="register-container">
+    <div class="register-register">
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d9b7bc52-5667-4dae-8c5b-1730d47a2838?org_if_sml=1251"
+        alt="Rectangle265591"
+        class="main-page-before-rectangle26"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/288026cc-11de-4701-bea9-adf229bc8f13?org_if_sml=1346"
+        alt="Rectangle45592"
+        class="main-page-before-rectangle4"
+      />
+      <span class="main-page-before-text18"><a href="/"><span>Home</span></a></span>
+      <span class="main-page-before-text16"><a href="{% url 'register' %}"><span>Register</span></a></span>
+      <span class="main-page-before-text12"><a href="{% url 'about' %}"><span>About</span></a></span>
+      <span class="main-page-before-text14"><a href="{% url 'login' %}"><span>Login</span></a></span>
+      <span class="main-page-before-text10"><a href="{% url 'logout' %}?next=/"><span>LOGOUT</span></a></span>
+      <span class="main-page-after-text22"><a href="/"><span>Placard De Porche</span></a></span>
+      <img
+        src="/rectangle275533-38ol.svg"
+        alt="Rectangle275533"
+        class="register-rectangle27"
+      />
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/f93ee8e7-9c6a-4140-ae4b-f2fd94628a36?org_if_sml=14565"
+        alt="Rectangle285534"
+        class="register-rectangle28"
+      />
+      <div class="register-input-fields">
+        <span class="register-text12"><span>Name</span></span>
+        <img
+          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/78e68216-606f-4aec-9d4d-21cb79a8a5fc?org_if_sml=1450"
+          alt="BoxI556"
+          class="register-box"
+        />
+        <span class="register-text14"><span>Password Confirmation</span></span>
+        <div class="register-value-main">
+          <img src alt="StartCursorI556" class="register-start-cursor" />
+          <div class="register-value-masked">
+            <div class="register-mask-layer">
+              <span class="register-text16"><span>The Value</span></span>
+              <img
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/be1468e8-faa4-4793-8d83-bcd5bb823b58?org_if_sml=1131"
+                alt="MaskBoxI556"
+                class="register-mask-box"
+              />
+            </div>
+          </div>
+          <input type="password2" class="login-input" placeholder="Comfim your password" name="password2" id="passwordInput2">
+          <img src alt="EndCursorI556" class="register-end-cursor" />
+        </div>
+      </div>
+      <span class="register-text18"><span>Register</span></span>
+      <div class="register-input-fields1">
+        <span class="register-text20"><span>Name</span></span>
+        <img
+          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/b32eb099-7c5e-4785-a1b2-cb7908d7d813?org_if_sml=1450"
+          alt="BoxI553"
+          class="register-box1"
+        />
+        <span class="register-text22"><span>Username</span></span>
+        <div class="register-value-main1">
+          <img src alt="StartCursorI553" class="register-start-cursor1" />
+          <div class="register-value-masked1">
+            <div class="register-mask-layer1">
+              <span class="register-text24"><span>The Value</span></span>
+              <img
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/9b84311a-a3a5-46e4-9f86-230e83a230cb?org_if_sml=1131"
+                alt="MaskBoxI553"
+                class="register-mask-box1"
+              />
+            </div>
+          </div>
+          <input type="text" class="login-input" placeholder="Enter a username" name="username" id="usernameInput">
+          <img src alt="EndCursorI553" class="register-end-cursor1" />
+        </div>
+      </div>
+      <div class="register-input-fields2">
+        <span class="register-text26"><span>Name</span></span>
+        <img
+          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/acae670e-5659-4136-b43d-573592ba1646?org_if_sml=1450"
+          alt="BoxI553"
+          class="register-box2"
+        />
+        <span class="register-text28"><span>Password</span></span>
+        <div class="register-value-main2">
+          <img src alt="StartCursorI553" class="register-start-cursor2" />
+          <div class="register-value-masked2">
+            <div class="register-mask-layer2">
+              <span class="register-text30"><span>The Value</span></span>
+              <img
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/d9e7ebcb-4f46-43bf-a1cb-0a886102f0be?org_if_sml=1131"
+                alt="MaskBoxI553"
+                class="register-mask-box2"
+              />
+            </div>
+          </div>
+          <input type="password1" class="login-input" placeholder="Enter a password" name="password1" id="passwordInput1">
+          <img src alt="EndCursorI553" class="register-end-cursor2" />
+        </div>
+      </div>
+      <span class="register-text32">
+        <span>
+          Not registered? Fill in your credentials here to get started.
+        </span>
+      </span>
+      <img
+        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/8867ae7a-7106-4434-ad76-24dd23ac219d/a33c5afc-14ff-4a91-81ae-92b61afdad9a?org_if_sml=1967"
+        alt="Rectangle295539"
+        class="register-rectangle29"
+      />
+      <button type="submit" class="login-button" onclick="fillForm()">
+<span class="register-text34"><span>Register</span></span>
+<style>
+  #RegistrationForm {
+    display: none;
+  }
+</style>
+<form method="post" id="RegistrationForm">
+  {% csrf_token %}
+  {{ form.as_p }}
+</form>
+
+<script>
+  function fillForm() {
+    const usernameInput = document.getElementById('usernameInput');
+    const passwordInput1 = document.getElementById('passwordInput1');
+    const passwordInput2 = document.getElementById('passwordInput2');
+
+    const formUsernameInput = document.getElementById('id_username');
+    const formPasswordInput1 = document.getElementById('id_password1');
+    const formPasswordInput2 = document.getElementById('id_password2');
+
+    formUsernameInput.value = usernameInput.value;
+    formPasswordInput1.value = passwordInput1.value;
+    formPasswordInput2.value = passwordInput2.value;
+    document.getElementById('RegistrationForm').submit();
+  }
+</script>
+    </div>
+  </div>
+</div>
+
+<!--
+<form method="post" id="registerform">
+  {% csrf_token %}
+  <div class="form-group">
+    <input type="{{ form.username.field.widget.input_type }}" id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}" class="form-control" placeholder="Username" required>
+  </div>
+  
+  <div class="form-group">
+    <input type="{{ form.password1.field.widget.input_type }}" id="{{ form.password1.id_for_label }}" name="{{ form.password1.html_name }}" class="form-control" placeholder="Password" required>
+  </div>
+  
+  <div class="form-group">
+    <input type="{{ form.password2.field.widget.input_type }}" id="{{ form.password2.id_for_label }}" name="{{ form.password2.html_name }}" class="form-control" placeholder="Password confirmation" required>
+  </div>
+  
+  <button type="submit">register</button>
+</form>
+-->
